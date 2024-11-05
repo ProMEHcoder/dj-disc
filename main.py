@@ -13,6 +13,10 @@ s = pygame.mixer.Sound("a.mp3")
 so = pygame.mixer.Sound("d.mp3")
 sow = pygame.mixer.Sound("w.mp3")
 sown = pygame.mixer.Sound("q.mp3")
+sownm = pygame.mixer.Sound("e.mp3")
+sownma = pygame.mixer.Sound("z.mp3")
+sownmak = pygame.mixer.Sound("x.mp3")
+sownmake = pygame.mixer.Sound("c.mp3")
 # make game loop
 run = True
 while run:
@@ -29,7 +33,14 @@ while run:
   		pygame.mixer.Sound.play(sow)
 	if key[pygame.K_q] == True:
   		pygame.mixer.Sound.play(sown)
-
+	if key[pygame.K_e] == True:
+  		pygame.mixer.Sound.play(sownm)
+	if key[pygame.K_z] == True:
+  		pygame.mixer.Sound.play(sownma)
+	if key[pygame.K_x] == True:
+  		pygame.mixer.Sound.play(sownmak)
+	if key[pygame.K_c] == True:
+  		pygame.mixer.Sound.play(sownmake)
 
 	# make event handler
 	for event in pygame.event.get():
