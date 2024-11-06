@@ -17,7 +17,10 @@ sownm = pygame.mixer.Sound("e.mp3")
 sownma = pygame.mixer.Sound("z.mp3")
 sownmak = pygame.mixer.Sound("x.mp3")
 sownmake = pygame.mixer.Sound("c.mp3")
-
+#backdrop
+bgs=pygame.image.load("back.jpg")
+bgs=pygame.transform.scale(bgs,(Screen_width,Screen_height))
+bg=bgs.get_rect()
 # make game loop
 run = True
 while run:
@@ -42,6 +45,8 @@ while run:
   		pygame.mixer.Sound.play(sownmak)
 	if key[pygame.K_c] == True:
   		pygame.mixer.Sound.play(sownmake)
+
+	screen.blit(bgs,bg)
 
 	# make event handler
 	for event in pygame.event.get():
