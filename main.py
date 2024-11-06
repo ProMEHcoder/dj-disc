@@ -46,6 +46,7 @@ while run:
 	if key[pygame.K_c] == True:
   		pygame.mixer.Sound.play(sownmake)
 
+  	# background
 	screen.blit(bgs,bg)
 
 	# make event handler
