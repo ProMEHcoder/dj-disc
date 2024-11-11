@@ -8,6 +8,7 @@ Screen_height = 600
 
 screen = pygame.display.set_mode((Screen_width,Screen_height))
 
+# variables
 sownd = pygame.mixer.Sound("s.mp3")
 s = pygame.mixer.Sound("a.mp3")
 so = pygame.mixer.Sound("d.mp3")
