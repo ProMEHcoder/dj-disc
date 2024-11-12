@@ -18,6 +18,10 @@ sownm = pygame.mixer.Sound("e.mp3")
 sownma = pygame.mixer.Sound("z.mp3")
 sownmak = pygame.mixer.Sound("x.mp3")
 sownmake = pygame.mixer.Sound("c.mp3")
+sownmakec = pygame.mixer.Sound("v.mp3")
+sownmakeco = pygame.mixer.Sound("f.mp3")
+sownmakecoo = pygame.mixer.Sound("r.mp3")
+sownmakecool = pygame.mixer.Sound("t.mp3")
 #backdrop
 bgs=pygame.image.load("back.jpg")
 bgs=pygame.transform.scale(bgs,(Screen_width,Screen_height))
@@ -46,7 +50,14 @@ while run:
   		pygame.mixer.Sound.play(sownmak)
 	if key[pygame.K_c] == True:
   		pygame.mixer.Sound.play(sownmake)
-
+	if key[pygame.K_v] == True:
+  		pygame.mixer.Sound.play(sownmakec)
+	if key[pygame.K_f] == True:
+  		pygame.mixer.Sound.play(sownmakeco)
+	if key[pygame.K_r] == True:
+  		pygame.mixer.Sound.play(sownmakecoo)
+	if key[pygame.K_t] == True:
+  		pygame.mixer.Sound.play(sownmakecool)
   	# background
 	screen.blit(bgs,bg)
 
