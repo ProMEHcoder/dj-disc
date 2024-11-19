@@ -28,6 +28,7 @@ bgs=pygame.transform.scale(bgs,(Screen_width,Screen_height))
 bg=bgs.get_rect()
 # make game loop
 run = True
+paused = False
 while run:
 	
 
@@ -58,6 +59,21 @@ while run:
   		pygame.mixer.Sound.play(sownmakecoo)
 	if key[pygame.K_t] == True:
   		pygame.mixer.Sound.play(sownmakecool)
+	if key[pygame.K_SPACE] == True and paused ==False:
+  		pygame.mixer.pause()
+  		pygame.time.wait(100)
+  		paused = True
+  		print("oh no")
+	elif key[pygame.K_SPACE] == True and paused ==True:
+  		pygame.mixer.unpause()
+  		paused = False
+  		pygame.time.wait(100)
+  		print("oh yeah")
+ 		
+
+
+
+
   	# background
 	screen.blit(bgs,bg)
 
